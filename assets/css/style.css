@@ -834,6 +834,23 @@
         width: 18px;
         height: 18px;
     }
+    .banner-content {
+        min-height: 60vh;
+    }
+    .banner-section {
+        min-height: 60vh;
+    }
+    .inner-banner-section {
+        background: no-repeat left right / cover;
+        min-height: 30vh;
+    }
+    .inner-banner-content {
+        align-items: flex-end;
+        min-height: 30vh;
+    }
+    .inner-banner-content h1 {
+        font-size: 30px;
+    }
     .banner-content h1 {
         font-size: 28px;
     }
@@ -859,7 +876,7 @@
         flex-direction: column;
     }
     .copy-box {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 10px;
     }
