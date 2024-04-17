@@ -34,6 +34,28 @@ $('.testi-slider').owlCarousel({
         }
     }
 })
+$('.vdo-slider').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:false,
+    dots: false,
+    autoplay: true,
+    navText: [
+        '<i class="fa-solid fa-arrow-left-long"></i>',
+        '<i class="fa-solid fa-arrow-right-long"></i>',
+    ],
+    responsive:{
+        0:{
+            items: 1
+        },
+        600:{
+            items: 2
+        },
+        1000:{
+            items: 4
+        }
+    }
+})
 $('.gallery-slider').owlCarousel({
     loop:true,
     margin:20,
@@ -56,6 +78,31 @@ $('.gallery-slider').owlCarousel({
         },
         1200:{
             items: 3.5
+        }
+    }
+})
+$('.sd-slider').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    autoplay: false,
+    dots: false,
+    navText: [
+        '<i class="fa-solid fa-arrow-left-long"></i>',
+        '<i class="fa-solid fa-arrow-right-long"></i>',
+    ],
+    responsive:{
+        0:{
+            items: 1
+        },
+        600:{
+            items: 1
+        },
+        1000:{
+            items: 1
+        },
+        1200:{
+            items: 1
         }
     }
 })

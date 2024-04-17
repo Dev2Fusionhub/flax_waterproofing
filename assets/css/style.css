@@ -123,7 +123,7 @@
 .inner-banner-section {
     background: no-repeat center center / cover;
     position: relative;
-    min-height: 40vh;
+    min-height: 50vh;
     height: 100%;
     width: 100%;
 }
@@ -131,14 +131,14 @@
     justify-content: flex-end;
 }
 .inner-banner-section > * > .row {
-    justify-content: flex-end;
+    justify-content: center;
 }
 .inner-banner-content {
-    min-height: 40vh;
+    min-height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 .banner-content {
@@ -149,9 +149,16 @@
     align-items: flex-start;
     justify-content: center;
 }
-.banner-content h1 , .inner-banner-content h1 {
+.banner-content h1  {
     font-size: 54px;
     font-weight: 600;
+}
+.inner-banner-content h1 {
+    color: rgba(var(--white-color), 1);
+    background: rgba(var(--main-color), 1);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 38px;
 }
 .banner-content h1 span {
     color: rgba(var(--main-color), 1);
@@ -239,6 +246,159 @@
     padding: 15px 50px;
 }
 
+/*********************** Service Details Page ***********************/
+.sd-head {
+    text-align: center;
+}
+.sd-head p {
+    font-size: 16px;
+    font-weight: 600;
+}
+.sd-slider {
+    position: relative;
+}
+.sd-slider.owl-carousel .owl-nav {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+.sd-slider.owl-carousel .owl-nav button.owl-prev {
+    display: none;
+}
+.sd-slider.owl-carousel .owl-nav button.owl-next {
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sd-slider.owl-carousel .owl-nav button.owl-next i{
+    font-size: 30px;
+    
+}
+.sd-slider .item {
+    margin: 20px 0px;
+}
+.sd-img {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 12px 12px -4px rgba(0,0,0,0.75);
+}
+.sd-img * {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sd-upr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.sd-card {
+    border: 1px solid #A7A7A7;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.sd-upr {
+    padding: 20px;
+}
+.sd-upr h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.sd-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(var(--main-color), 1);
+    padding: 0px 10px 20px 10px;
+}
+.sd-price h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.sd-price h3 > span {
+    font-size: 34px;
+    font-weight: 600;
+}
+.sd-lwr {
+    margin: 40px 0px 0px;
+    padding: 20px;
+    background: #EBF1F8;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.common-btn-wihte {
+    border: 1px solid rgba(var(--main-color), 1);
+    border-radius: 20px;
+    padding: 10px 30px;
+    background: transparent;
+    transition: var(--transition-05s);
+}
+.common-btn-wihte:hover {
+    background: rgba(var(--main-color), 1);
+    border-color: transparent;
+    color: rgba(var(--white-color), 1);
+}
+.sd-details-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(var(--main-color), 1);
+    padding: 5px;
+}
+.sd-details-list {
+    position: relative;
+}
+.sd-details-list::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: 50%;
+    height: calc(100% + 10%);
+    width: 1px;
+    background: rgba(var(--main-color), 1);
+}
+.sd-details-item p:first-child {
+    padding-right: 20px;
+    width: 50%;
+}
+.sd-details-item p:last-child {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+.sd-details-item p {
+    margin-bottom: 0px;
+}
+.sd-details-left h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.sd-details-item p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.sd-details-right h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.sd-details-right p {
+    font-size: 14px;
+    font-weight: 400;
+}
 /****************************** Testimonial Section ***************** */
 .testi-section {
     background: rgba(var(--main-color), 1);
@@ -661,6 +821,7 @@
     font-weight: 300;
 }
 
+/************************************ Media Query **************************/
 @media (max-width: 1400px) {
     .gallery-MainSlider {
         width: calc(100% + 12%);
