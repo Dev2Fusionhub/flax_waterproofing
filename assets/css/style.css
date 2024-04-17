@@ -831,6 +831,9 @@
     .banner-content h1 {
         font-size: 38px;
     }
+    .inner-banner-content h1 {
+        font-size: 28px;
+    }
     .testi-card > p {
         font-size: 20px;
     }
@@ -962,6 +965,9 @@
     .test-head h3 {
         font-size: 28px;
     }
+    .sd-slider.owl-carousel .owl-nav {
+        top: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -973,6 +979,16 @@
     }
     .head-text {
         display: none;
+    }
+    .sd-upr h3 {
+        font-size: 24px;
+    }
+    .sd-price h3 > span {
+        font-size: 30px;
+    }
+    .sd-img {
+        width: auto;
+        height: auto;
     }
 }
 
@@ -1006,11 +1022,25 @@
         min-height: 30vh;
     }
     .inner-banner-content {
-        align-items: flex-end;
+        align-items: center;
         min-height: 30vh;
     }
     .inner-banner-content h1 {
-        font-size: 30px;
+        font-size: 20px;
+    }
+    .sd-upr h3 {
+        font-size: 20px;
+    }
+    .sd-slider.owl-carousel .owl-nav button.owl-next i {
+        font-size: 16px;
+    }
+    .sd-slider.owl-carousel .owl-nav button.owl-next {
+        width: 30px;
+        height: 30px;
+    }
+    .sd-slider.owl-carousel .owl-nav {
+        top: 107%;
+        right: 0%;
     }
     .banner-content h1 {
         font-size: 28px;
@@ -1052,6 +1082,13 @@
     }
     .contact-content .common-btn {
         width: 40%;
+    }
+    .sd-price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
 
