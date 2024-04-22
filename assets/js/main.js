@@ -13,6 +13,25 @@ Fancybox.bind("[data-fancybox]", {
     // Your custom options
 });
 
+function sendToWhatsApp() {
+    // Get user input values
+    var fullName = document.getElementById("fullname").value;
+    var phoneNumber = document.getElementById("phonenumber").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    
+    // Construct WhatsApp message
+    var message = "Full Name: " + fullName + "\n" +
+                  "E-mail: " + email + "\n" +
+                  "Phone Number: " + phoneNumber + "\n" +
+                  "Subject: " + subject;
+    
+    // Send data to WhatsApp
+    window.open("https://wa.me/+916291002357/?text=" + encodeURIComponent(message), "_blank");
+}
+
+
+
 $('.testi-slider').owlCarousel({
     loop:true,
     margin:0,
