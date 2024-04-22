@@ -28,8 +28,26 @@ function sendToWhatsApp() {
     
     // Send data to WhatsApp
     window.open("https://wa.me/+916291002357/?text=" + encodeURIComponent(message), "_blank");
-}
+};
 
+function BAsendToWhatsApp() {
+    // Get user input values
+    var BAfullName = document.getElementById("BAfullname").value;
+    var BAphoneNumber = document.getElementById("BAphonenumber").value;
+    var BAemail = document.getElementById("BAemail").value;
+    var BAselectdate = document.getElementById("BAselectdate").value;
+    var BAservice = document.getElementById("BAservice").value;
+    
+    // Construct WhatsApp message
+    var BAmessage = "Full Name: " + BAfullName + "\n" +
+                  "E-mail: " + BAemail + "\n" +
+                  "Phone Number: " + BAphoneNumber + "\n" +
+                  "Service: " + BAservice + "\n" +
+                  "Selected Date: " + BAselectdate;
+    
+    // Send data to WhatsApp
+    window.open("https://wa.me/+916291002357/?text=" + encodeURIComponent(BAmessage), "_blank");
+};
 
 
 $('.testi-slider').owlCarousel({

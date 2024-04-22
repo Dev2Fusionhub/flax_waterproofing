@@ -61,7 +61,7 @@ body {
 	position: relative;
 	z-index: 1;
 }
-.banner-section .row, .common-section .row, .footer-section .row, .quote-box .row {
+.banner-section .row, .common-section .row, .footer-section .row, .BookApp-form .row {
 	gap: 24px 0px;
 }
 .common-SubTitle, .common-box > span, .common-section .common-box > span {
