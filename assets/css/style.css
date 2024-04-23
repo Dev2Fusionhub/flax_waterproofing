@@ -1014,11 +1014,11 @@ input[type="date"]::before {
     .contact-content {
         flex-direction: column;
     }
-    /* input[type="date"]:not():before {
+    input[type="date"]::before {
         display: block;
-    } */
-    input[type="date"]:not([value=""])::before {
-        display: block;
+    }
+    input[type="date"]:not([value])::before {
+        display: none;
     }
 }
 
