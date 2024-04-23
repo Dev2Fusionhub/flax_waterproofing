@@ -1015,10 +1015,10 @@ input[type="date"]::before {
         flex-direction: column;
     }
     input[type="date"]::before {
-        display: block;
+        display: none;
     }
     input[type="date"]:not([value])::before {
-        display: none;
+        display: block;
     }
 }
 
