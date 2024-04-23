@@ -94,9 +94,9 @@ $('.vdo-slider').owlCarousel({
     }
 })
 $('.gallery-slider').owlCarousel({
-    loop:true,
-    margin:20,
-    nav:false,
+    loop: true,
+    margin: 20,
+    nav: false,
     autoplay: true,
     dots: false,
     navText: [
