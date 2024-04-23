@@ -443,23 +443,22 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="input-box">
-                                            <input type="text" placeholder="Enter Your Full Name" id="BAfullname" class="form-control">
+                                            <input type="text" placeholder="Enter Your Full Name" id="BAfullname" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="input-box">
-                                            <input type="email" placeholder="Enter Your Email" id="BAphonenumber" class="form-control">
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="input-box">
-                                            <input type="number" placeholder="Enter Your Phone Number" id="BAemail" class="form-control">
+                                            <input type="email" placeholder="Enter Your Email" id="BAemail" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="input-box">
-                                            <select id="BAservice" name="bookingtype" class="form-select">
+                                            <input type="number" placeholder="Enter Your Phone Number" id="BAphonenumber" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-box">
+                                            <select id="BAservice" name="bookingtype" class="form-select" required>
                                                 <option value="Select Service" selected disabled>Select Service</option>
                                                 <option value="Waterproofing">Waterproofing</option>
                                                 <option value="Home Painting">Home Painting</option>
@@ -474,7 +473,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="input-box">
-                                            <input type="text" onfocus="(this.type='date')" id="BAselectdate" placeholder="Select Date" class="form-control">
+                                            <input type="date" id="BAselectdate" placeholder="DD/MM/YYYY" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">

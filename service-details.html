@@ -496,64 +496,63 @@
 	  </footer>
 
 	  <div class="">
-		  <div class="modal fade" id="BookAppointment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="BookAppointmentLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-				  <div class="modal-content">
-					  <div class="modal-header">
-						  <h5 class="modal-title" id="BookAppointmentLabel">Book Appointment</h5>
-						  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					  </div>
-					  <div class="modal-body">
-						  <form action="" class="BookApp-form">
-							  <div class="row">
-								  <div class="col-12">
-									  <div class="input-box">
-										  <input type="text" placeholder="Enter Your Full Name" id="BAfullname" class="form-control">
-									  </div>
-								  </div>
-								  <div class="col-12">
-									  <div class="input-box">
-										  <input type="email" placeholder="Enter Your Email" id="BAphonenumber" class="form-control">
-									  </div>
-									  
-								  </div>
-								  <div class="col-12">
-									  <div class="input-box">
-										  <input type="number" placeholder="Enter Your Phone Number" id="BAemail" class="form-control">
-									  </div>
-								  </div>
-								  <div class="col-12">
-									  <div class="input-box">
-										  <select id="BAservice" name="bookingtype" class="form-select">
-											  <option value="Select Service" selected disabled>Select Service</option>
-											  <option value="Waterproofing">Waterproofing</option>
-											  <option value="Home Painting">Home Painting</option>
-											  <option value="Waterproofing Chemical">Waterproofing Chemical</option>
-											  <option value="Waterproof Coatings">Waterproof Coatings</option>
-											  <option value="Basement Waterproofing">Basement Waterproofing</option>
-											  <option value="Roof Garden Waterproofing">Roof Garden Waterproofing</option>
-											  <option value="Toilet Waterproofing">Toilet Waterproofing</option>
-											  <option value="Wall Painting">Wall Painting</option>
-										  </select>
-									  </div>
-								  </div>
-								  <div class="col-12">
-									  <div class="input-box">
-										  <input type="text" onfocus="(this.type='date')" id="BAselectdate" placeholder="Select Date" class="form-control">
-									  </div>
-								  </div>
-								  <div class="col-md-6 col-12">
-									  <div class="fc-btn text-start">
-										  <button type="button" onclick="BAsendToWhatsApp()" class="btn common-btn">Book Appointment</button>
-									  </div>
-								  </div>
-							  </div>
-						  </form>
-					  </div>
-				  </div>
-			  </div>
-		  </div>
-	  </div>
+      <div class="modal fade" id="BookAppointment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="BookAppointmentLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="BookAppointmentLabel">Book Appointment</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form action="" class="BookApp-form">
+                          <div class="row">
+                              <div class="col-12">
+                                  <div class="input-box">
+                                      <input type="text" placeholder="Enter Your Full Name" id="BAfullname" class="form-control" required>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="input-box">
+                                      <input type="email" placeholder="Enter Your Email" id="BAemail" class="form-control" required>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="input-box">
+                                      <input type="number" placeholder="Enter Your Phone Number" id="BAphonenumber" class="form-control" required>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="input-box">
+                                      <select id="BAservice" name="bookingtype" class="form-select" required>
+                                          <option value="Select Service" selected disabled>Select Service</option>
+                                          <option value="Waterproofing">Waterproofing</option>
+                                          <option value="Home Painting">Home Painting</option>
+                                          <option value="Waterproofing Chemical">Waterproofing Chemical</option>
+                                          <option value="Waterproof Coatings">Waterproof Coatings</option>
+                                          <option value="Basement Waterproofing">Basement Waterproofing</option>
+                                          <option value="Roof Garden Waterproofing">Roof Garden Waterproofing</option>
+                                          <option value="Toilet Waterproofing">Toilet Waterproofing</option>
+                                          <option value="Wall Painting">Wall Painting</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="input-box">
+                                      <input type="date" id="BAselectdate" placeholder="DD/MM/YYYY" class="form-control" required>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 col-12">
+                                  <div class="fc-btn text-start">
+                                      <button type="button" onclick="BAsendToWhatsApp()" class="btn common-btn">Book Appointment</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
 		<script src="assets/js/jquery-3.7.1.min.js"></script>
 		<script src="assets/js/bootstrap.bundle.5.3.3.min.js"></script>
