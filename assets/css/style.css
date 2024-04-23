@@ -704,6 +704,25 @@ input[type="date"]::before {
     display: none;
     position: absolute;
 }
+input:not(:valid)::before {
+    display: block;
+}
+input[type=date]:not(:valid)::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]:not(:valid)::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]:not(:valid)::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]:not(:valid)::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
 .fc-btn {
     width: 100%;
 }
@@ -1012,9 +1031,6 @@ input[type="date"]::before {
     }    
     .contact-content {
         flex-direction: column;
-    }
-    input:not(:valid)::before {
-        display: block;
     }
 }
 
