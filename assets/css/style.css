@@ -699,6 +699,12 @@
     appearance: none;
     margin: 0px;
 }
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    margin-right: 0.5em;
+    display: none;
+    position: absolute;
+}
 .fc-btn {
     width: 100%;
 }
@@ -1007,6 +1013,9 @@
     }    
     .contact-content {
         flex-direction: column;
+    }
+    input[type="date"]:before {
+        display: block;
     }
 }
 
