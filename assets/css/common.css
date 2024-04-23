@@ -25,6 +25,10 @@
 	--black-color: 0, 0, 0;
 	--footer-bg: 17, 48, 75; /*  rgb(17, 48, 75); */
 }
+html {
+	scroll-behavior: smooth;
+}
+
 input:hover, select:hover, .btn:hover, button:hover, .form-control:hover, textarea:hover, .navbar-toggler:hover, input:focus, select:focus, .btn:focus, button:focus, .form-control:focus, textarea:focus, .navbar-toggler:focus, .btn:first-child:active, .btn-close:focus, button.btn:focus:not(:focus-visible), .form-select:hover, .form-select:focus {
 	box-shadow: none;
 	outline: 0px;

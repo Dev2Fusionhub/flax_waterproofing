@@ -707,20 +707,9 @@ input[type="date"]::before {
 input:not(:valid)::before {
     display: block;
 }
-input[type=date]:not(:valid)::-webkit-datetime-edit-text {
+input[type=date]:not(:valid)::-webkit-datetime-edit-text, input[type=date]:not(:valid)::-webkit-datetime-edit-month-field, input[type=date]:not(:valid)::-webkit-datetime-edit-day-field, input[type=date]:not(:valid)::-webkit-datetime-edit-year-field {
     -webkit-appearance: none;
-    display: none;
-}
-input[type=date]:not(:valid)::-webkit-datetime-edit-month-field{
-    -webkit-appearance: none;
-    display: none;
-}
-input[type=date]:not(:valid)::-webkit-datetime-edit-day-field {
-    -webkit-appearance: none;
-    display: none;
-}
-input[type=date]:not(:valid)::-webkit-datetime-edit-year-field {
-    -webkit-appearance: none;
+    appearance: none;
     display: none;
 }
 .fc-btn {
