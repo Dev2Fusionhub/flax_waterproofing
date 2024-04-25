@@ -159,12 +159,23 @@
     background: rgba(var(--main-color), 1);
     padding: 15px 30px;
     border-radius: 10px;
-    font-size: 38px;
+    font-size: 34px;
 }
 .banner-content h1 span {
     color: rgba(var(--main-color), 1);
 }
-
+.modal-header {
+    background: rgba(var(--main-color),1);
+    color: rgba(var(--white-color), 1);
+}
+.modal-header .btn-close {
+    background: none;
+    font-size: 24px;
+    color: rgba(var(--white-color), 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /************************ What We Do Sections *********************/
 .wwd-head {
     text-align: center;
