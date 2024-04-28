@@ -611,15 +611,15 @@
     font-weight: 400;
 }
 .nwc-list li {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
     display: flex;
-    align-items: center;
-    gap: 8px;
+    align-items: flex-start;
+    gap: 10px;
 }
 .nwc-list li i {
-    font-size: 18px;
+    font-size: 24px;
     color: rgba(var(--main-color), 1);
 }
 
@@ -1137,6 +1137,13 @@ input[type=date]:not(:valid)::-webkit-datetime-edit-text, input[type=date]:not(:
     }
     .fc-form, .BookApp-form {
         padding: 10px;
+    }
+    .sd-head {
+        text-align: left;
+    }
+    .sd-head p {
+        font-size: 14px;
+        line-height: 1.8;
     }
 }
 
